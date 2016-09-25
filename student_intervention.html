@@ -11807,7 +11807,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries</span>
@@ -12050,7 +12050,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Calculate number of students</span>
@@ -12113,7 +12113,7 @@ Graduation rate of the class: 67.09%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Extract feature columns</span>
@@ -12195,7 +12195,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">preprocess_features</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -12266,7 +12266,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import any additional functionality you may need here</span>
@@ -12435,7 +12435,7 @@ It is robust in noisy data if we tune the distance function to be inverse square
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">train_classifier</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
@@ -12508,7 +12508,7 @@ It is robust in noisy data if we tune the distance function to be inverse square
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import the three supervised learning models from sklearn</span>
@@ -12558,58 +12558,58 @@ It is robust in noisy data if we tune the distance function to be inverse square
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>---------Decision tree---------
 Training a DecisionTreeClassifier using a training set size of 100. . .
-Trained model in 0.0014 seconds
-Made predictions in 0.0003 seconds.
+Trained model in 0.0032 seconds
+Made predictions in 0.0008 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0004 seconds.
+Made predictions in 0.0002 seconds.
 F1 score for test set: 0.6552.
 Training a DecisionTreeClassifier using a training set size of 200. . .
-Trained model in 0.0017 seconds
+Trained model in 0.0018 seconds
 Made predictions in 0.0003 seconds.
 F1 score for training set: 1.0000.
 Made predictions in 0.0002 seconds.
 F1 score for test set: 0.7500.
 Training a DecisionTreeClassifier using a training set size of 300. . .
-Trained model in 0.0020 seconds
-Made predictions in 0.0003 seconds.
+Trained model in 0.0025 seconds
+Made predictions in 0.0004 seconds.
 F1 score for training set: 1.0000.
 Made predictions in 0.0002 seconds.
 F1 score for test set: 0.6613.
 ---------K nearest neighbours----------
 Training a KNeighborsClassifier using a training set size of 100. . .
-Trained model in 0.0004 seconds
-Made predictions in 0.0012 seconds.
+Trained model in 0.0036 seconds
+Made predictions in 0.0018 seconds.
 F1 score for training set: 0.8060.
 Made predictions in 0.0009 seconds.
 F1 score for test set: 0.7246.
 Training a KNeighborsClassifier using a training set size of 200. . .
-Trained model in 0.0006 seconds
-Made predictions in 0.0020 seconds.
+Trained model in 0.0005 seconds
+Made predictions in 0.0021 seconds.
 F1 score for training set: 0.8800.
-Made predictions in 0.0011 seconds.
+Made predictions in 0.0013 seconds.
 F1 score for test set: 0.7692.
 Training a KNeighborsClassifier using a training set size of 300. . .
-Trained model in 0.0006 seconds
-Made predictions in 0.0039 seconds.
+Trained model in 0.0007 seconds
+Made predictions in 0.0041 seconds.
 F1 score for training set: 0.8809.
-Made predictions in 0.0022 seconds.
+Made predictions in 0.0015 seconds.
 F1 score for test set: 0.7801.
 ---------Ensemble gradient boosting----------
 Training a GradientBoostingClassifier using a training set size of 100. . .
-Trained model in 0.0368 seconds
-Made predictions in 0.0004 seconds.
+Trained model in 0.0381 seconds
+Made predictions in 0.0010 seconds.
 F1 score for training set: 1.0000.
 Made predictions in 0.0003 seconds.
 F1 score for test set: 0.7519.
 Training a GradientBoostingClassifier using a training set size of 200. . .
-Trained model in 0.0506 seconds
-Made predictions in 0.0006 seconds.
+Trained model in 0.0509 seconds
+Made predictions in 0.0005 seconds.
 F1 score for training set: 0.9964.
 Made predictions in 0.0003 seconds.
 F1 score for test set: 0.7591.
 Training a GradientBoostingClassifier using a training set size of 300. . .
-Trained model in 0.0637 seconds
-Made predictions in 0.0007 seconds.
+Trained model in 0.0696 seconds
+Made predictions in 0.0008 seconds.
 F1 score for training set: 0.9739.
 Made predictions in 0.0003 seconds.
 F1 score for test set: 0.7794.
@@ -12818,7 +12818,24 @@ F1 score for test set: 0.7794.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Ensable learners use the concept of "weak learners" where in the simple rule is to find a prediction at each stage which has a accuracy better than chance i.e p &gt; 0.5. This is very simple concept but when it is iterated over several of the parameters it produces a powerful classifier. In the training stage we take known data with known labels and produce a hypothesis which gives us p&gt;0.5, then we repeat it for several iteration. Then finally we combine the models  individually according to thier weights and produce a final model.</p>
+<p><del>Ensable learners use the concept of "weak learners" where in the simple rule is to find a prediction at each stage which has a accuracy better than chance i.e p &gt; 0.5. This is very simple concept but when it is iterated over several of the parameters it produces a powerful classifier. In the training stage we take known data with known labels and produce a hypothesis which gives us p&gt;0.5, then we repeat it for several iteration. Then finally we combine the models  individually according to thier weights and produce a final model.</del></p>
+<p><strong>UPDATE:</strong></p>
+<p>Ensemble gradient boosing algorithms work on a simple concept that the prediction at each stage is <em>slightly better than chance</em>. The algorithm works as follows</p>
+<p>concepts:</p>
+<ul>
+<li>Ensemble learners: a collection of models which predict a certain part of the data</li>
+<li>weak learners: A model who's prediction accuracy is &gt;50%</li>
+</ul>
+<p>Algorithm</p>
+<ol>
+<li>initialize each data with equal weights</li>
+<li>construct a (weak)model which is better than chance.</li>
+<li>Increase the weights for those data which predictions went wrong.</li>
+<li>Train next model using samples drawn according to updated weight distribution. repeat from steps 1,2,3 untill we are satisfied with final prediction.</li>
+<li>we can combine the hypothesis at last bsaed on weights on how many dataset it got right</li>
+</ol>
+<p>In this way the algorithm learns models for data which are "hard" to learn and thus the ensemble of these models produces a good model which is good a learning different parts of the data.</p>
+<p><strong>explanation interms of school data</strong> - Imagine a set of features could explain correctly &gt;50% of the time if student passes or fails. Now the algoritmn will increase weights on those students which it missed in prediction. Then we build another model which describese these outlier students. repeating the above steps produces a robust algorithm which can predict different types of students who are prone to failure.</p>
 
 </div>
 </div>
