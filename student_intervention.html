@@ -11807,7 +11807,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries</span>
@@ -12050,7 +12050,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Calculate number of students</span>
@@ -12113,7 +12113,7 @@ Graduation rate of the class: 67.09%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Extract feature columns</span>
@@ -12195,7 +12195,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">preprocess_features</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -12266,7 +12266,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import any additional functionality you may need here</span>
@@ -12278,7 +12278,7 @@ Feature values:
 <span class="n">num_test</span> <span class="o">=</span> <span class="n">X_all</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">num_train</span>
 
 <span class="c1"># TODO: Shuffle and split the dataset into the number of training and testing points above</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X_all</span><span class="p">,</span> <span class="n">y_all</span><span class="p">,</span><span class="n">train_size</span><span class="o">=</span><span class="n">num_train</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X_all</span><span class="p">,</span> <span class="n">y_all</span><span class="p">,</span><span class="n">stratify</span><span class="o">=</span><span class="n">y_all</span><span class="p">,</span><span class="n">train_size</span><span class="o">=</span><span class="n">num_train</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
 <span class="c1"># Show the results of the split</span>
 <span class="k">print</span> <span class="s2">&quot;Training set has {} samples.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -12435,7 +12435,7 @@ It is robust in noisy data if we tune the distance function to be inverse square
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">train_classifier</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
@@ -12508,7 +12508,7 @@ It is robust in noisy data if we tune the distance function to be inverse square
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import the three supervised learning models from sklearn</span>
@@ -12519,31 +12519,35 @@ It is robust in noisy data if we tune the distance function to be inverse square
 <span class="c1"># TODO: Initialize the three models</span>
 <span class="n">clf_A</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">clf_B</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
-<span class="n">clf_C</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">GradientBoostingClassifier</span><span class="p">()</span>
+<span class="n">clf_C</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">GradientBoostingClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
 <span class="c1"># TODO: Set up the training set sizes</span>
-<span class="n">X_train_100</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[:</span><span class="mi">100</span><span class="p">]</span>
-<span class="n">y_train_100</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">[:</span><span class="mi">100</span><span class="p">]</span>
-
-<span class="n">X_train_200</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[:</span><span class="mi">200</span><span class="p">]</span>
-<span class="n">y_train_200</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">[:</span><span class="mi">200</span><span class="p">]</span>
-
-<span class="n">X_train_300</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[:</span><span class="mi">300</span><span class="p">]</span>
-<span class="n">y_train_300</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">[:</span><span class="mi">300</span><span class="p">]</span>
+<span class="c1"># not needed</span>
 
 <span class="c1"># TODO: Execute the &#39;train_predict&#39; function for each classifier and each training set size</span>
-<span class="k">print</span> <span class="s2">&quot;---------Decision tree---------&quot;</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_A</span><span class="p">,</span> <span class="n">X_train_100</span><span class="p">,</span> <span class="n">y_train_100</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_A</span><span class="p">,</span> <span class="n">X_train_200</span><span class="p">,</span> <span class="n">y_train_200</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_A</span><span class="p">,</span> <span class="n">X_train_300</span><span class="p">,</span> <span class="n">y_train_300</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="k">print</span> <span class="s2">&quot;---------K nearest neighbours----------&quot;</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_B</span><span class="p">,</span> <span class="n">X_train_100</span><span class="p">,</span> <span class="n">y_train_100</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_B</span><span class="p">,</span> <span class="n">X_train_200</span><span class="p">,</span> <span class="n">y_train_200</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_B</span><span class="p">,</span> <span class="n">X_train_300</span><span class="p">,</span> <span class="n">y_train_300</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="k">print</span> <span class="s2">&quot;---------Ensemble gradient boosting----------&quot;</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_C</span><span class="p">,</span> <span class="n">X_train_100</span><span class="p">,</span> <span class="n">y_train_100</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_C</span><span class="p">,</span> <span class="n">X_train_200</span><span class="p">,</span> <span class="n">y_train_200</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_C</span><span class="p">,</span> <span class="n">X_train_300</span><span class="p">,</span> <span class="n">y_train_300</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">clf</span> <span class="ow">in</span> <span class="p">[</span><span class="n">clf_A</span><span class="p">,</span><span class="n">clf_B</span><span class="p">,</span><span class="n">clf_C</span><span class="p">]:</span>
+    <span class="k">print</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Training &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">300</span><span class="p">]:</span>
+        <span class="n">train_predict</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">[:</span><span class="n">n</span><span class="p">],</span> <span class="n">y_train</span><span class="p">[:</span><span class="n">n</span><span class="p">],</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+        
+<span class="k">def</span> <span class="nf">confusionMatrix</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+    <span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+    <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+    <span class="o">%</span><span class="k">matplotlib</span> inline
+
+    <span class="c1"># Compute confusion matrix for a model</span>
+    <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">))</span>
+
+    <span class="c1"># view with a heatmap</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;no&#39;</span><span class="p">,</span> <span class="s1">&#39;yes&#39;</span><span class="p">],</span> <span class="n">yticklabels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;no&#39;</span><span class="p">,</span> <span class="s1">&#39;yes&#39;</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;True label&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Predicted label&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Confusion matrix for:</span><span class="se">\n</span><span class="s1">{}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="p">));</span>
+
+<span class="c1">#draw confusion matrix for best model</span>
+<span class="n">confusionMatrix</span><span class="p">(</span><span class="n">clf_B</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12556,65 +12560,221 @@ It is robust in noisy data if we tune the distance function to be inverse square
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>---------Decision tree---------
+<pre>
+Training 
 Training a DecisionTreeClassifier using a training set size of 100. . .
-Trained model in 0.0032 seconds
-Made predictions in 0.0008 seconds.
-F1 score for training set: 1.0000.
+Trained model in 0.0010 seconds
 Made predictions in 0.0002 seconds.
-F1 score for test set: 0.6552.
-Training a DecisionTreeClassifier using a training set size of 200. . .
-Trained model in 0.0018 seconds
+F1 score for training set: 1.0000.
 Made predictions in 0.0003 seconds.
+F1 score for test set: 0.6452.
+Training a DecisionTreeClassifier using a training set size of 200. . .
+Trained model in 0.0011 seconds
+Made predictions in 0.0001 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0002 seconds.
-F1 score for test set: 0.7500.
+Made predictions in 0.0001 seconds.
+F1 score for test set: 0.7258.
 Training a DecisionTreeClassifier using a training set size of 300. . .
-Trained model in 0.0025 seconds
+Trained model in 0.0015 seconds
+Made predictions in 0.0002 seconds.
+F1 score for training set: 1.0000.
+Made predictions in 0.0001 seconds.
+F1 score for test set: 0.6838.
+
+Training 
+Training a KNeighborsClassifier using a training set size of 100. . .
+Trained model in 0.0004 seconds
+Made predictions in 0.0009 seconds.
+F1 score for training set: 0.8252.
+Made predictions in 0.0008 seconds.
+F1 score for test set: 0.7586.
+Training a KNeighborsClassifier using a training set size of 200. . .
+Trained model in 0.0004 seconds
+Made predictions in 0.0022 seconds.
+F1 score for training set: 0.8097.
+Made predictions in 0.0011 seconds.
+F1 score for test set: 0.7857.
+Training a KNeighborsClassifier using a training set size of 300. . .
+Trained model in 0.0006 seconds
+Made predictions in 0.0041 seconds.
+F1 score for training set: 0.8539.
+Made predictions in 0.0015 seconds.
+F1 score for test set: 0.8138.
+
+Training 
+Training a GradientBoostingClassifier using a training set size of 100. . .
+Trained model in 0.0365 seconds
 Made predictions in 0.0004 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0002 seconds.
-F1 score for test set: 0.6613.
----------K nearest neighbours----------
-Training a KNeighborsClassifier using a training set size of 100. . .
-Trained model in 0.0036 seconds
-Made predictions in 0.0018 seconds.
-F1 score for training set: 0.8060.
-Made predictions in 0.0009 seconds.
-F1 score for test set: 0.7246.
-Training a KNeighborsClassifier using a training set size of 200. . .
-Trained model in 0.0005 seconds
-Made predictions in 0.0021 seconds.
-F1 score for training set: 0.8800.
-Made predictions in 0.0013 seconds.
-F1 score for test set: 0.7692.
-Training a KNeighborsClassifier using a training set size of 300. . .
-Trained model in 0.0007 seconds
-Made predictions in 0.0041 seconds.
-F1 score for training set: 0.8809.
-Made predictions in 0.0015 seconds.
-F1 score for test set: 0.7801.
----------Ensemble gradient boosting----------
-Training a GradientBoostingClassifier using a training set size of 100. . .
-Trained model in 0.0381 seconds
-Made predictions in 0.0010 seconds.
-F1 score for training set: 1.0000.
 Made predictions in 0.0003 seconds.
-F1 score for test set: 0.7519.
+F1 score for test set: 0.7500.
 Training a GradientBoostingClassifier using a training set size of 200. . .
-Trained model in 0.0509 seconds
+Trained model in 0.0485 seconds
 Made predictions in 0.0005 seconds.
-F1 score for training set: 0.9964.
+F1 score for training set: 0.9924.
 Made predictions in 0.0003 seconds.
-F1 score for test set: 0.7591.
+F1 score for test set: 0.7313.
 Training a GradientBoostingClassifier using a training set size of 300. . .
-Trained model in 0.0696 seconds
-Made predictions in 0.0008 seconds.
-F1 score for training set: 0.9739.
+Trained model in 0.0621 seconds
+Made predictions in 0.0007 seconds.
+F1 score for training set: 0.9781.
 Made predictions in 0.0003 seconds.
-F1 score for test set: 0.7794.
+F1 score for test set: 0.7463.
 </pre>
 </div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
 </div>
 
 </div>
@@ -12649,24 +12809,24 @@ F1 score for test set: 0.7794.
 <tbody>
 <tr>
 <td style="text-align:center">100</td>
-<td style="text-align:center">0.0013</td>
-<td style="text-align:center">0.0002</td>
+<td style="text-align:center">0.0010</td>
+<td style="text-align:center">0.0004</td>
 <td style="text-align:center">1.0000</td>
-<td style="text-align:center">0.6552</td>
+<td style="text-align:center">0.6452</td>
 </tr>
 <tr>
 <td style="text-align:center">200</td>
 <td style="text-align:center">0.0015</td>
-<td style="text-align:center">0.0002</td>
+<td style="text-align:center">0.0001</td>
 <td style="text-align:center">1.0000</td>
-<td style="text-align:center">0.7500</td>
+<td style="text-align:center">0.7258</td>
 </tr>
 <tr>
 <td style="text-align:center">300</td>
 <td style="text-align:center">0.0017</td>
 <td style="text-align:center">0.0001</td>
 <td style="text-align:center">1.0000</td>
-<td style="text-align:center">0.6613</td>
+<td style="text-align:center">0.6838</td>
 </tr>
 </tbody>
 </table>
@@ -12685,22 +12845,22 @@ F1 score for test set: 0.7794.
 <td style="text-align:center">100</td>
 <td style="text-align:center">0.0004</td>
 <td style="text-align:center">0.0008</td>
-<td style="text-align:center">0.8060</td>
-<td style="text-align:center">0.7246</td>
+<td style="text-align:center">0.8252</td>
+<td style="text-align:center">0.7586</td>
 </tr>
 <tr>
 <td style="text-align:center">200</td>
-<td style="text-align:center">0.0004</td>
-<td style="text-align:center">0.0011</td>
-<td style="text-align:center">0.8800</td>
-<td style="text-align:center">0.7692</td>
+<td style="text-align:center">0.0005</td>
+<td style="text-align:center">0.0012</td>
+<td style="text-align:center">0.8097</td>
+<td style="text-align:center">0.7857</td>
 </tr>
 <tr>
 <td style="text-align:center">300</td>
 <td style="text-align:center">0.0006</td>
-<td style="text-align:center">0.0015</td>
-<td style="text-align:center">0.8809</td>
-<td style="text-align:center">0.7801</td>
+<td style="text-align:center">0.0016</td>
+<td style="text-align:center">0.8538</td>
+<td style="text-align:center">0.8138</td>
 </tr>
 </tbody>
 </table>
@@ -12717,24 +12877,24 @@ F1 score for test set: 0.7794.
 <tbody>
 <tr>
 <td style="text-align:center">100</td>
-<td style="text-align:center">0.0370</td>
-<td style="text-align:center">0.0003</td>
+<td style="text-align:center">0.0401</td>
+<td style="text-align:center">0.0004</td>
 <td style="text-align:center">1.0000</td>
-<td style="text-align:center">0.7519</td>
+<td style="text-align:center">0.7500</td>
 </tr>
 <tr>
 <td style="text-align:center">200</td>
-<td style="text-align:center">0.0504</td>
+<td style="text-align:center">0.0492</td>
 <td style="text-align:center">0.0003</td>
-<td style="text-align:center">0.9946</td>
-<td style="text-align:center">0.7591</td>
+<td style="text-align:center">0.9924</td>
+<td style="text-align:center">0.7313</td>
 </tr>
 <tr>
 <td style="text-align:center">300</td>
-<td style="text-align:center">0.0637</td>
-<td style="text-align:center">0.0003</td>
-<td style="text-align:center">0.9739</td>
-<td style="text-align:center">0.7794</td>
+<td style="text-align:center">0.0623</td>
+<td style="text-align:center">0.0007</td>
+<td style="text-align:center">0.9781</td>
+<td style="text-align:center">0.7463</td>
 </tr>
 </tbody>
 </table>
@@ -12773,7 +12933,7 @@ F1 score for test set: 0.7794.
 <p>Comparision</p>
 <table>
 <thead><tr>
-<th style="text-align:center">K nearest neighbours</th>
+<th style="text-align:center">K nearest neighbours(KNN)</th>
 <th style="text-align:center">Ensemble gradient boosting</th>
 </tr>
 </thead>
@@ -12787,17 +12947,19 @@ F1 score for test set: 0.7794.
 <td style="text-align:center">Prediction time Fastest</td>
 </tr>
 <tr>
-<td style="text-align:center">F1 test score highest at 0.78 highest (barely)</td>
-<td style="text-align:center">F1 test score highest with 0.78 (0.7794 round off)</td>
+<td style="text-align:center">F1 test score highest at <strong>0.81 highest</strong></td>
+<td style="text-align:center">F1 test score highest with 0.75</td>
 </tr>
 </tbody>
 </table>
-<p>Both of the classifiers perform equally well and it difficult to choose. However I go with <strong>Ensemble gradient boosting</strong>. The reason is because</p>
+<p>I go with <strong>K nearest neighbours</strong>. The reason is because</p>
 <ul>
-<li>The training time is higher but the prediction time is lower. This helps for a fast runtime efficiency as training is done one time only.</li>
-<li>There is a larger difference between F1 score of train and test. This implies that we can have more convergence by tuning and the model has more promise of better predictions.</li>
-<li>Ensable learners are known to always improve thier accuracy and not overfit even with large data.</li>
+<li>The training time is lower but the prediction time is higher. This helps for a fast training is done one time only. But the prediction time is only linearly lower</li>
+<li>This model always performs better in all the training set sizes.</li>
+<li>This makes more intutive sense because k-nearest algorithm captures similarity distance and similar students group would perform same way in real-world</li>
 </ul>
+<p><strong>Another important point</strong> - After drawing confusition matrix it appears the the most dangerous part in our algorithm is to predict a student doent <em>not</em> need attention while in reality the student needs. i.e P(false) while actual is true. This is dangerous because the student will fail and we didnt provide extra attention. However providing extra attention to passing students is not a problem as it will only help them.</p>
+<p>This is least in KNN (5 students) and thus another plus point</p>
 
 </div>
 </div>
@@ -12817,25 +12979,32 @@ F1 score for test set: 0.7794.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
-<p><del>Ensable learners use the concept of "weak learners" where in the simple rule is to find a prediction at each stage which has a accuracy better than chance i.e p &gt; 0.5. This is very simple concept but when it is iterated over several of the parameters it produces a powerful classifier. In the training stage we take known data with known labels and produce a hypothesis which gives us p&gt;0.5, then we repeat it for several iteration. Then finally we combine the models  individually according to thier weights and produce a final model.</del></p>
-<p><strong>UPDATE:</strong></p>
-<p>Ensemble gradient boosing algorithms work on a simple concept that the prediction at each stage is <em>slightly better than chance</em>. The algorithm works as follows</p>
-<p>concepts:</p>
+<h1 id="Answer:-"><strong>Answer: </strong><a class="anchor-link" href="#Answer:-">&#182;</a></h1><p><del>Ensable learners use the concept of "weak learners" where in the simple rule is to find a prediction at each stage which has a accuracy better than chance i.e p &gt; 0.5. This is very simple concept but when it is iterated over several of the parameters it produces a powerful classifier. In the training stage we take known data with known labels and produce a hypothesis which gives us p&gt;0.5, then we repeat it for several iteration. Then finally we combine the models  individually according to thier weights and produce a final model.</del></p>
+<p><del><strong>UPDATE 1:</strong></del></p>
+<p><del>Ensemble gradient boosing algorithms work on a simple concept that the prediction at each stage is <em>slightly better than chance</em>. The algorithm works as follows</del></p>
+<p><del>concepts:</del></p>
 <ul>
-<li>Ensemble learners: a collection of models which predict a certain part of the data</li>
-<li>weak learners: A model who's prediction accuracy is &gt;50%</li>
+<li><del>Ensemble learners: a collection of models which predict a certain part of the data</del></li>
+<li><del>weak learners: A model who's prediction accuracy is &gt;50%</del></li>
 </ul>
-<p>Algorithm</p>
+<p><del>Algorithm</del></p>
+<p><del>0. initialize each data with equal weights</del>
+<del>1. construct a (weak)model which is better than chance.</del>
+<del>2. Increase the weights for those data which predictions went wrong.</del>
+<del>3. Train next model using samples drawn according to updated weight distribution. repeat from steps 1,2,3 untill we are satisfied with final prediction.</del>
+~~4. we can combine the hypothesis at last bsaed on weights on how many dataset it got right</p>
+<p><del>In this way the algorithm learns models for data which are "hard" to learn and thus the ensemble of these models produces a good model which is good a learning different parts of the data.</del></p>
+<p><del><strong>explanation interms of school data</strong> - Imagine a set of features could explain correctly &gt;50% of the time if student passes or fails. Now the algoritmn will increase weights on those students which it missed in prediction. Then we build another model which describese these outlier students. repeating the above steps produces a robust algorithm which can predict different types of students who are prone to failure.</del></p>
+<h1 id="Update-2:">Update 2:<a class="anchor-link" href="#Update-2:">&#182;</a></h1><p>After implementing the sugession to split the train-test split evenly, I see that K-nearest neighbour is better prediction algorithm.</p>
+<p>K-nearest neighbours(KNN), it is a classification or regression technique. KNN for our case is a classification with output a class membership of student being pass being "yes" or "no". The KNN is a lazy algorithm where function is only approximated locally and all computations is deferred untill classification.</p>
+<p>In KNN we define a <em>distance function</em> which produces a output of distance between 2 data points. This can be many times of functions from simple cartition coordinate distance to a specialized function which is domain specific such as driving distance in case of a housing example.</p>
+<p>Given a new training example, KNN performs as follows.</p>
 <ol>
-<li>initialize each data with equal weights</li>
-<li>construct a (weak)model which is better than chance.</li>
-<li>Increase the weights for those data which predictions went wrong.</li>
-<li>Train next model using samples drawn according to updated weight distribution. repeat from steps 1,2,3 untill we are satisfied with final prediction.</li>
-<li>we can combine the hypothesis at last bsaed on weights on how many dataset it got right</li>
+<li>Finds K nearest neighbours through the <em>distance function</em></li>
+<li>using the known class of these K nearest neighbours calculate the predicted class of the New training example. This can be done in many ways (weighted avg, log func, inverse exponential functions, custom functions etc).</li>
 </ol>
-<p>In this way the algorithm learns models for data which are "hard" to learn and thus the ensemble of these models produces a good model which is good a learning different parts of the data.</p>
-<p><strong>explanation interms of school data</strong> - Imagine a set of features could explain correctly &gt;50% of the time if student passes or fails. Now the algoritmn will increase weights on those students which it missed in prediction. Then we build another model which describese these outlier students. repeating the above steps produces a robust algorithm which can predict different types of students who are prone to failure.</p>
+<p><strong>explanation in-terms of school data</strong> The algorithm tries to group together similar students who are "close" to each other. In this case close can be defined as a simple subtraction because we used <em>pandas.get_dummy()</em> when we converted these <em>categorical</em> datas into differnt columns. Thus the difference captures the differences correctly as it is a binary variable.</p>
+<p>Intutively, students with similar charecteristics tend to either pass or fail. i.e if a student has failed in many of the subjects he/she is more prone to fail at the end and vice-versa.</p>
 
 </div>
 </div>
@@ -12866,23 +13035,24 @@ F1 score for test set: 0.7794.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;GridSearchCV&#39; and &#39;make_scorer&#39;</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">grid_search</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">make_scorer</span><span class="p">,</span><span class="n">fbeta_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">DistanceMetric</span>
 <span class="c1"># TODO: Create the parameters list you wish to tune</span>
-<span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span> 
-              <span class="s1">&#39;learning_rate&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.8</span><span class="p">],</span>
-              <span class="s1">&#39;max_depth&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>
+<span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s1">&#39;weights&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span><span class="s1">&#39;distance&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;leaf_size&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">45</span><span class="p">]</span>
              <span class="p">}</span>
 
 <span class="c1"># TODO: Initialize the classifier</span>
-<span class="n">clf</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">GradientBoostingClassifier</span><span class="p">()</span>
+<span class="n">clf</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
 
 <span class="c1"># TODO: Make an f1 scoring function using &#39;make_scorer&#39; </span>
-<span class="n">f1_scorer</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="n">fbeta_score</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">f1_scorer</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="n">f1_score</span><span class="p">,</span><span class="n">pos_label</span><span class="o">=</span><span class="s1">&#39;yes&#39;</span><span class="p">)</span>
 
 <span class="c1"># TODO: Perform grid search on the classifier using the f1_scorer as the scoring method</span>
 <span class="n">grid_obj</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">GridSearchCV</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span><span class="n">parameters</span><span class="p">)</span>
@@ -12908,10 +13078,10 @@ F1 score for test set: 0.7794.
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Made predictions in 0.0004 seconds.
-Tuned model has a training F1 score of 0.8406.
-Made predictions in 0.0005 seconds.
-Tuned model has a testing F1 score of 0.8000.
+<pre>Made predictions in 0.0075 seconds.
+Tuned model has a training F1 score of 0.8539.
+Made predictions in 0.0027 seconds.
+Tuned model has a testing F1 score of 0.8138.
 </pre>
 </div>
 </div>
@@ -12936,7 +13106,10 @@ Tuned model has a testing F1 score of 0.8000.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>The final F1 train score is 0.8406 and F1 test score is 0.8000. This is an improvement of 0.02 from the untuned model which is an <em>improvement of 2.5%</em> (0.02/0.78)</p>
+<p><del>The final F1 train score is 0.8406 and F1 test score is 0.8000. This is an improvement of 0.02 from the untuned model which is an <em>improvement of 2.5%</em> (0.02/0.78)</del></p>
+<p><strong>Update 2:</strong></p>
+<p>The final training score is 0.8539 and test score is 0.8138. There is no improvement from the untuned model.</p>
+<p>Even after trying to fit the data to many parameters, I could not increase the prediction accuracy over the default values for parameters. It either decreased or remained the same amount of test-set F1 score.</p>
 
 </div>
 </div>
